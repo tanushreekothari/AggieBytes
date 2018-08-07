@@ -1,4 +1,4 @@
-Restaurant Recommendation System (AggieBites) v0.2
+Restaurant Recommendation System (AggieBytes) v0.2
 
 **************************************************************************
 SUMMARY
