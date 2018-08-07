@@ -1,0 +1,31 @@
+import groovy.swing.SwingBuilder
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "presentationLayer.Recommendation"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    compile 'org.mongodb:mongo-java-driver:3.5.0'
+}
+
+
+task rec(type:JavaExec, dependsOn:run) {
+	classpath = sourceSets.main.runtimeClasspath
+	main = "presentationLayer.Recommendation"
+}
+
+run {
+	standardInput = System.in;
+}
+
+
+
+
+
+
+
